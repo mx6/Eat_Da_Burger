@@ -2,11 +2,13 @@ console.log("we're talkin")
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
   $(".change-ready").on("click", function(event) {
+    event.preventDefault();
+    console.log(event);
     var id = $(this).data("id");
-    var newReady = $(this).data("newready");
+    var newReady = $(this).data("newdevoured");
 
     var newReadyState = {
-      ready: newReady
+      devoured: newReady
     };
 
     // Send the PUT request.
@@ -25,10 +27,10 @@ $(function() {
   $(".create-form").on("submit", function(event) {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
-
+    console.log($("#ca").val());
     var newBurger = {
-      name: $("#ca").val().trim(),
-      ready: $("[name=ready]:checked").val().trim()
+      burger_name: $("#ca").val().trim(),
+      ready: $("[name=Devoured]:checked").val().trim()
     };
 
     // Send the POST request.
@@ -36,7 +38,8 @@ $(function() {
       type: "POST",
       data: newBurger
     }).then(
-      function() {
+      function(res) {
+        console.log(res);
         console.log("created new burger");
         // Reload the page to get the updated list
         location.reload();
