@@ -1,7 +1,11 @@
-<img src="../assets/img/burger.png" width="50%"/>
-<h1>Burgers</h1>
+<div class="top">
+<img src="../assets/img/burger.png" width="250px"/>
+<h1>Who Wants Burgers</h1>
+</div>
 
-<h2>Burgers that have not been eaten</h2>
+
+<div class="ready-burgers">
+<h2>Burgers that are ready to be eaten </h2>
 
 <ul>
   {{#each burgers}}
@@ -10,8 +14,10 @@
     {{/unless}}
   {{/each}}
 </ul>
-
-<h2>Burgers that have been devoured</h2>
+</div>
+<div class="burger-lists">
+<div class="devoured-burgers">
+<h2> Burgers that have been devoured</h2>
 
 <ul>
   {{#each burgers}}
@@ -20,9 +26,13 @@
     {{/if}}
   {{/each}}
 </ul>
-
+</div>
+<div style="clear: both;"></div>
+</div>
+<div class="burger-add">
 <h2>Add a Burger</h2>
 <form class="create-form">
+</div>
 
   <div class="form-group">
     <label for="ca">Burger Name:</label>
@@ -30,10 +40,15 @@
   </div>
 
   <div class="form-group">
-    <label for="slee">Devoured?</label><br>
+    <label for="slee">Is the burger ready or not?</label><br>
     <input type="radio" name="Devoured" value="1" checked> Devoured!<br>
     <input type="radio" name="Devoured" value="0"> Ready
   </div>
 
-  <button type="submit">Add Burger</button>
+<div class="button">
+  <button class="button" type="submit">Add Burger</button>
+
+  </div>
+
+
 </form>

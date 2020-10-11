@@ -1,7 +1,44 @@
 html, body {
-    margin: auto;
-    padding: auto;
+    margin: 10px;
+    padding: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: darksalmon;
+    background-color: lightblue;
+    
 }
 
+/* div {
+    border: 1px solid red;
+} */
+
+.top {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.burger-lists {
+  
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+
+.ready-burgers, .devoured-burgers {
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+   
+    
+}
+
+.form-group, .burger-add {
+    text-align: center;
+}
+
+.button {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}

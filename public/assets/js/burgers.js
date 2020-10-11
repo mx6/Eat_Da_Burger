@@ -27,6 +27,7 @@ $(function() {
   $(".create-form").on("submit", function(event) {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
+    console.log(event)
     console.log($("#ca").val());
     var newBurger = {
       burger_name: $("#ca").val().trim(),
@@ -39,7 +40,7 @@ $(function() {
       data: newBurger
     }).then(
       function(res) {
-        console.log(res);
+        // console.log(res);
         console.log("created new burger");
         // Reload the page to get the updated list
         location.reload();
