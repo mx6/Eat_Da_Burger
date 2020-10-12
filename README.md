@@ -12,6 +12,8 @@ Here's what it looks like:
 
 ![CODE SCREENSHOT](./eatdaburger_screenshot.png)
 
+Day-to-day posting:
+
 112007LOCT2020
 
 Uploaded/launched/deployed Heroku app:
