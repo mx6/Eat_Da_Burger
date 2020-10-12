@@ -1,5 +1,9 @@
 # Eat_Da_Burger 
 
+111923LOCT2020
+
+Uploaded final files.  About to post to Hiroku.  Is that how it's spelled?
+
 111225LOCT2020
 
 Finally got most of the Javascript to work; can't seem to make it add a new burger to either column.  It will only add to the 'ready' column.
