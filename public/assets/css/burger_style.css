@@ -1,8 +1,10 @@
 html, body {
-    margin: 10px;
-    padding: 10px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: lightblue;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    background-image: linear-gradient(lightblue, #eeeeee);
+    background-repeat: no-repeat;
     
 }
 
@@ -16,15 +18,17 @@ html, body {
     text-align: center;
 }
 
-.burger-lists {
+/* .burger-lists {
   
     margin-left: auto;
     margin-right: auto;
   
-}
+} */
 
 .ready-burgers, .devoured-burgers {
-    float: left;
+    /* float: left; */
+    width: 50%;
+    /* text-align: center; */
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
